@@ -335,6 +335,23 @@
             scrollbar-width: none;
         }
 
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+        background: var(--accent-color);
+        border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+        background: var(--secondary-color);
+        }
+
         @media (max-width: 480px) {
             .auth-card {
                 padding: 30px 20px;
