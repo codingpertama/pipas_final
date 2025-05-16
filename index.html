@@ -57,10 +57,10 @@
               <a class="nav-link fw-bold" href="#">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="recomendasi.html">Kategori</a>
+              <a class="nav-link fw-bold" href="kategori.html">Kategori</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="recomendasi.html">Tentang</a>
+              <a class="nav-link fw-bold" href="tentang.html">Tentang</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bold" href="kontak.html">Kontak</a>
@@ -80,18 +80,26 @@
       </div>
     </nav>
 
-  <div class="jumbotron-bg text-white d-flex flex-column justify-content-center">
-    <div class="container text-center">
-      <h1 class="display-4 mb-4">Jelajah rasa khas Cisarua, cukup PesenAja.</h1>
-      <p class="lead">
-        Jalan-jalan ke Surya Kencana,<br/>
-        nyari makan malah bingung juga. <br/>
-        Gak usah ribet keliling kota,<br/>
-        tinggal buka PesenAja!
-      </p>
-      <a href="tempatkuliner.html" class="btn_map bg-white text-black d-inline-block mt-3 tex">Cari Kuliner Sekitar Bogor</a>
+<div class="jumbotron-bg text-white d-flex flex-column justify-content-center position-relative">
+  <div class="container text-center">
+    <h1 class="display-4 mb-4">Jelajah rasa khas Cisarua, cukup PesenAja.</h1>
+    <p class="lead">
+      Jalan-jalan ke Surya Kencana,<br/>
+      nyari makan malah bingung juga. <br/>
+      Gak usah ribet keliling kota,<br/>
+      tinggal buka PesenAja!
+    </p>
+  </div>
+
+  <!-- Dipindahkan ke luar dari .container -->
+  <div class="btn_map bg-white text-black text-start">
+    <p>Lokasimu</p>
+    <div class="lokasi-box">
+      <span id="alamat" class="py-3 px-4"><i class="fa-solid fa-location-dot m-1" style="color: #b60303;"></i>Mendeteksi lokasi kamu...</span>
     </div>
   </div>
+</div>
+
 
   <div class="product-grid">
   <div class="product-card">
@@ -221,5 +229,6 @@
       integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
       crossorigin="anonymous"
     ></script>
+    <script src="js/rekomen.js"></script>
   </body>
 </html>
