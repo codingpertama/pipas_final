@@ -1,23 +1,28 @@
-:root{
-    --main-color: #00aa13;
-    --main-color-light: #ffff;
-    --strip-color: #b60303;
+:root {
+  --main-color: #00aa13;
+  --main-color-light: #ffff;
+  --strip-color: #b60303;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.icon_search{
-    background-color: #42f48991;
-    color:#007e0f;
+.icon_search {
+  background-color: #42f48991;
+  color: #007e0f;
 }
 
 .btn_login {
-    background-color: #42f48991;
-    color:#007e0f;
-    border-radius: 100px;
-    font-weight:600;
+  background-color: #42f48991;
+  color: #007e0f;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.btn_login:hover {
+  background-color: #42f489cd;
+  color: #007e0f;
 }
 
 .jumbotron-bg {
@@ -31,16 +36,53 @@ body {
 }
 
 .display-4 {
-    font-size: 2.5rem;
-    font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .btn_map {
-    background-color: #42f48991;
-    color:#007e0f;
-    padding: 35px 120px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #42f48991;
+  color: #007e0f;
+  padding: 35px 70px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  max-width: 90%; /* biar kalau teks-nya panjang, tetap gak melebihi layar */         /* Ganti jadi full (bisa diatur max-width-nya) */
+  text-align: left;
+  box-sizing: border-box; /* Penting biar padding gak nambahin lebar */
+}
+
+#alamat {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: inline-block;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* ✅ Media query untuk layar kecil */
+@media (max-width: 576px) {
+  .btn_map {
+    padding: 20px;
+    font-size: 0.9rem;
+    width: 95%;              /* Biar lebih dekat ke full width */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #alamat {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    width: 100%;
+    display: block;
+  }
 }
